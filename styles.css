@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-wrapper {
+  background-color: var(--Off-white);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container-sub {
+  display: grid;
+  background-color: var(--White);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 25%;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.birthday-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-form,
+.month-form,
+.year-form {
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 9rem;
+}
+
+.birthday-form-label {
+  color: var(--Smokey-grey);
+}
+
+.birthday-form-error,
+.birthday-form-error-day,
+.birthday-form-error-month,
+.birthday-form-error-year {
+  color: var(--Light-red);
+  font-weight: 800i;
+  font-style: italic;
+  font-size: 0.75rem;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.label-error {
+  color: var(--Light-red);
+}
+
+.input-error {
+  outline: 1px solid var(--Light-red);
+}
+
+.birthday-form-input {
+  font-size: 2rem;
+  padding: 0.6rem;
+  padding-left: 1.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--Light-grey);
+}
+
+.birthday-form-inputs {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.birthday-form-input:active,
+.birthday-form-input:hover {
+  cursor: url("./assets/images/pointer.svg"), pointer;
+}
+
+.birthday-form-input:focus-visible {
+  outline: 1px solid var(--Purple);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.divider-line {
+  width: 100%;
+  border-bottom: 1px solid var(--Light-grey);
+}
+
+.btn {
+  background-color: var(--Purple);
+  border: none;
+  border-radius: 50%;
+  width: 6.5rem;
+  height: 5.5rem;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: var(--Off-black);
+  cursor: url("./assets/images/pointer.svg"), pointer;
+}
+
+.btn-icon {
+  width: 45%;
+}
+
+.age {
+  display: flex;
+  flex-direction: column;
+}
+
+.age p {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -0.2rem;
+  font-style: italic;
+  margin-bottom: -2rem;
+}
+
+.age p span {
+  color: var(--Purple);
+  letter-spacing: 1rem;
+  transition: all 0.7s;
+}
+
+@media (max-width: 768px) {
+  .container-sub {
+    max-width: 35rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-sub {
+    gap: 3rem;
+    max-width: 23rem;
+    width: 80%;
+    place-items: center;
+  }
+
+  .birthday-form {
+    gap: 5rem;
+  }
+
+  .birthday-form-inputs {
+    justify-content: center;
+  }
+
+  .day-form,
+  .month-form,
+  .year-form {
+    max-width: 6rem;
+  }
+
+  .birthday-form-input {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
+
+  .divider {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+  }
+
+  .age p {
+    font-size: 4rem;
+  }
+
+  .age p span {
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-sub {
+    max-width: 19rem;
+    padding: 4rem 1.6rem;
+  }
+
+  .day-form,
+  .month-form,
+  .year-form {
+    max-width: 5rem;
+  }
+}

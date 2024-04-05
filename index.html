@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/js/main.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="container">
+        <div class="container-sub">
+          <form class="birthday-form">
+            <div class="birthday-form-inputs">
+              <div class="day-form">
+                <label for="day" class="birthday-form-label">Day</label>
+                <input
+                  type="text"
+                  id="day"
+                  name="day"
+                  placeholder="DD"
+                  class="birthday-form-input"
+                  maxlength="2"
+                />
+                <p class="birthday-form-error">This field is required</p>
+                <p class="birthday-form-error-day">Must be a valid day</p>
+              </div>
+              <div class="month-form">
+                <label for="month" class="birthday-form-label">Month</label>
+                <input
+                  type="text"
+                  id="month"
+                  name="month"
+                  placeholder="MM"
+                  class="birthday-form-input"
+                  maxlength="2"
+                />
+                <p class="birthday-form-error">This field is required</p>
+                <p class="birthday-form-error-month">Must be a valid month</p>
+              </div>
+              <div class="year-form">
+                <label for="year" class="birthday-form-label">Year</label>
+                <input
+                  type="text"
+                  id="year"
+                  name="year"
+                  placeholder="YYYY"
+                  class="birthday-form-input"
+                  maxlength="4"
+                />
+                <p class="birthday-form-error">This field is required</p>
+                <p class="birthday-form-error-year">Must be in the past</p>
+              </div>
+            </div>
+            <div class="divider">
+              <div class="divider-line"></div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="46"
+                  height="44"
+                  viewBox="0 0 46 44"
+                  class="btn-icon"
+                >
+                  <g fill="none" stroke="#FFF" stroke-width="2">
+                    <path
+                      d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div class="age">
+            <p><span class="age-years">--</span> years</p>
+            <p><span class="age-months">--</span> months</p>
+            <p><span class="age-days">--</span> days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
