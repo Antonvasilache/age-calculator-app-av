@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Antonvasilache/age-calculator-app-av)
-- Live Site URL: [Add live site URL here](https://age-calculator-app-av.netlify.app/)
+- [Solution URL:](https://github.com/Antonvasilache/age-calculator-app-av)
+- [Live Site URL:](https://age-calculator-app-av.netlify.app/)
 
 ## My process
 
